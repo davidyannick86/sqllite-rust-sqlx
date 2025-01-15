@@ -1,5 +1,5 @@
 use sqlx::{migrate::MigrateDatabase, sqlite::SqliteQueryResult, Sqlite, SqlitePool};
-use std::result::{self, Result};
+use std::result::Result;
 
 async fn create_schema(db_url: &str) -> Result<SqliteQueryResult, sqlx::Error> {
     let pool = SqlitePool::connect(db_url).await?;
