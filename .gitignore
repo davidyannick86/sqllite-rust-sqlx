@@ -1,0 +1,32 @@
+/target
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Rust
+**/*.rs.bk
+
+# PostgreSQL
+*.pgsql
+
+# MySQL
+*.sql
+
+# MongoDB
+*.mongo
+
+# SQLite
+*.sqlite
+sqlite*
+
+# JetBrains
+.idea/
+*.iml
+
+.env

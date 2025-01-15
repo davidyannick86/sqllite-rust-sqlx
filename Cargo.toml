@@ -1,0 +1,20 @@
+[package]
+name = "sqllite-rust-sqlx"
+version = "0.1.0"
+edition = "2021"
+authors = ["David Tavan"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+
+# Add dependencies here
+[dependencies]
+sqlx = { version = "0.8.3", features = [
+    "sqlite",
+    "runtime-async-std-native-tls",
+] }
+async-std = { version = "1.13.0", features = ["attributes"] }
+futures = "0.3.31"
+
+# Add dev dependencies here
+[dev-dependencies]
